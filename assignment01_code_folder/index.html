@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://kit.fontawesome.com/fc72cceb08.js" crossorigin="anonymous"></script>
+    <title>Jingxuan(Alexina) Chang</title>
+</head>
+<body>
+    <!-- navigation manu and logo and everything  -->
+    <header>
+        <!-- here add the collapsable logo/name/icon later for phone screen  -->
+        <!-- here is the regular navigation bar for big screen  -->
+        <div class="menu-content">
+            <nav class="nav-menu">
+                <!-- menu part#1 for the main buttons  -->
+                <div id="top-main-menu" class="top-main-menu">
+                    <ul id="menu-list">
+                        <li id="menu-item-00" class="menu-item"><a href="index.html" class="menu-link">Jingxuan(Alexina) Chang</a></li>
+                        <li id="menu-item-01" class="menu-item"><a href="resume.html" class="menu-link">Resume</a></li>
+                        <li id="menu-item-02" class="menu-item"><a href="courses.html" class="menu-link">Courses</a></li>
+                    </ul>
+                </div>
+                <!-- menu part#2 for the logos if needed  -->
+                <div id="top-secondary-menu"></div>
+            </nav>
+        </div>
+
+        <!-- here is the menu for the small screen (make drop down menu) -->
+        <div class="menu-content-small">
+            <input type="checkbox" id="menu-icon">
+            <label for="menu-icon" class="menu-name"><i class="fa-solid fa-bars fa-2xl"></i></label>
+            <h1 class="menu-item-sm-title">
+                <a href="index.html" class="sm-title">Jingxuan(Alexina) Chang</a>
+            </h1>
+            <div class="drop-down-menu">
+                <nav id="nav-menu-small" class="nav-menu-small-container">
+                    <ul id="small-menu-list" class="small-menu-list">
+                        <li id="menu-item-sm-00" class="menu-item-sm"><a href="index.html" class="menu-link">Jingxuan(Alexina) Chang</a></li>
+                        <li id="menu-item-sm-01" class="menu-item-sm"><a href="resume.html" class="menu-link">Resume</a></li>
+                        <li id="menu-item-sm-02" class="menu-item-sm"><a href="courses.html" class="menu-link">Courses</a></li> 
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!-- main content three parts in total-->
+    <section id="main-content" class="main-content">
+        <div id="description">
+            <p id="self-description">Sociable, motivated <a href="https://www.algonquincollege.com/sat/program/computer-programming/">computer programming</a> student with experience in web development, 
+                    Object-Oriented Programming(Java), project management, curating, and education.</p>
+            <p>Proficient in Java and JavaScript. Comfortable working with Python and C.</p>
+            <p>Equipped with communication skills and coordination skills.</p>   
+            <p>Passionate about learning new things, not afraid of challenges, and goal-oriented.</p>
+        </div>
+
+        <!-- this part uses flexbox to align the items  -->
+        <div id="picture-and-deco" class="picture-and-deco">
+            <div id="deco-contact" class="deco">
+                <p>Contact: </p>
+                <p>alychang0216@gmail.com</p>
+            </div>
+            <div id="deco-location" class="deco">
+                <p>Location: </p>
+                <p>Ottawa, Canada</p>
+            </div>
+            <div id="deco-picture" class="deco">
+                <img src="img/profile_pic.jpg" alt="" id="profile-pic">
+            </div>
+        </div>
+        <!-- this part also uses grid to align the items  -->
+        <div id="wrapper-capabilities">
+            <h2 class="section-title">Capabilities</h2>
+            <!-- this part uses flexbox to align horizontally -->
+            <div class="capabilities" id="capabilities">
+                <div id="capability-01" class="capability-items">
+                    <h3 class="capability-number">01</h3>
+                    <h5 class="capability-title">Object-Oriented Programming</h5>
+                    <ul>
+                        <li><a href="" class="capability-list-item">Java</a></li>
+                        <li><a href="" class="capability-list-item">Python</a></li>
+                        <li><a href="" class="capability-list-item">PHP</a></li>
+                    </ul>
+                </div>
+                <div id="capability-02" class="capability-items">
+                    <h3 class="capability-number">02</h3>
+                    <h5 class="capability-title">Web Development</h5>
+                    <ul>
+                        <li>JavaScript</li>
+                        <li>HTML & CSS</li>
+                        <li>jQuery, Bootstrap & EJS</li>
+                        <li>React</li>
+                    </ul> 
+                </div>
+                <div id="capability-03" class="capability-items">
+                    <h3 class="capability-number">03</h3>
+                    <h5 class="capability-title">Databse Management</h5>
+                    <ul>
+                        <li>SQL and MySql Workbench</li>
+                        <li>Microsoft Access</li>
+                        <li>Oracle</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- footer, copyright and stuff-->
+    <footer class="big-footer" id="big-footer">
+        <p>
+            All content copyright the author. No comercial use without express written permission.
+        </p>
+        ©2023 Alexina J. Chang
+    </footer>
+</body>
+</html>

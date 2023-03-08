@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://kit.fontawesome.com/fc72cceb08.js" crossorigin="anonymous"></script>
+    <title>Courses</title>
+</head>
+<body>
+    <!-- navigation manu and logo and everything  -->
+    <header>
+        <!-- here add the collapsable logo/name/icon later for phone screen  -->
+
+        <!-- here is the regular navigation bar for big screen  -->
+        <div class="menu-content">
+            <nav class="nav-menu">
+                <!-- menu part#1 for the main buttons  -->
+                <div id="top-main-menu" class="top-main-menu">
+                    <ul id="menu-list">
+                        <li id="menu-item-00" class="menu-item"><a href="index.html" class="menu-link">Jingxuan(Alexina) Chang</a></li>
+                        <li id="menu-item-01" class="menu-item"><a href="resume.html" class="menu-link">Resume</a></li>
+                        <li id="menu-item-02" class="menu-item"><a href="courses.html" class="menu-link">Courses</a></li>
+                    </ul>
+                </div>
+                <!-- menu part#2 for the logos if needed  -->
+                <div id="top-secondary-menu"></div>
+            </nav>
+        </div>
+
+        <!-- here is the menu for the small screen (make drop down menu) -->
+        <div class="menu-content-small">
+            <input type="checkbox" id="menu-icon">
+            <label for="menu-icon" class="menu-name"><i class="fa-solid fa-bars fa-2xl"></i></label>
+            <h1 class="menu-item-sm-title">
+                <a href="index.html" class="sm-title">Jingxuan(Alexina) Chang</a>
+            </h1>
+            <div class="drop-down-menu">
+                <nav id="nav-menu-small" class="nav-menu-small-container">
+                    <ul id="small-menu-list" class="small-menu-list">
+                        <li id="menu-item-sm-00" class="menu-item-sm"><a href="index.html" class="menu-link">Jingxuan(Alexina) Chang</a></li>
+                        <li id="menu-item-sm-01" class="menu-item-sm"><a href="resume.html" class="menu-link">Resume</a></li>
+                        <li id="menu-item-sm-02" class="menu-item-sm"><a href="courses.html" class="menu-link">Courses</a></li> 
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!-- main content -->
+    <div id="main-content" class="main-content">
+        <div class="search-wrapper">
+            <div id="search-container">
+                <input type="search" id="searchbox" placeholder="search for courses">
+                <button id="search">Search</button>
+            </div>
+            <div id="sorting-buttons">
+                <button class="button-sort" id="button-all">Display All</button>
+                <button class="button-sort" id="button-level01">Level 1</button>
+                <button class="button-sort" id="button-level02">Level 2</button>
+                <button class="button-sort" id="button-up">Sort Level 1 - 4</button>
+                <button class="button-sort" id="button-down">Sort Level 4 - 1</button>
+            </div>
+        </div>
+        <div id="course-gallery">
+
+        </div>          
+    </div>
+    <!-- footer, copyright and stuff-->
+    <footer class="big-footer" id="big-footer">
+        <p>
+            All content copyright the author. No comercial use without express written permission.
+        </p>
+        ©2023 Alexina J. Chang
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,407 @@
+*{
+    margin: 0;
+    background-color: #f4f4f4;
+    color: #914535;
+}
+
+/* *** *** *** *** first page  *** *** *** *** */
+
+.menu-content-small{
+    display: none;
+}
+
+#top-main-menu{
+    display: flex;
+    padding: 30px;
+    margin: 10px;
+}
+.menu-item{
+    display: inline;
+}
+
+.menu-link{
+    text-decoration: none;
+    color:#914535;
+}
+
+.menu-link:hover{
+    color:black;
+}
+
+#menu-item-00{
+    padding-right: 50px;
+}
+
+#menu-item-01{
+    padding-left: 500px;
+    padding-right: 30px;
+}
+
+#menu-item-02{
+    padding-left: 10px;
+}
+
+.main-content{
+    padding: 0 60px;
+    margin: 10px;
+}
+#description{
+    padding-right: 35%;
+    padding-top: 20px;
+    font-size: 20px;
+    margin-top: 30px;
+}
+
+#picture-and-deco{
+    display: flex;
+    align-items: end;
+    margin: 20px 0;
+    padding: 0 0 50px 0;
+}
+
+.deco{
+    padding-right: 100px;
+    padding-top: 10px;
+    border-style: double;
+    border-width: 8px 0 0 0;
+    /* margin-right: 2px; */
+}
+
+#deco-picture{
+    border-style: hidden;
+    padding-left: 100px;
+}
+
+#profile-pic{
+    width: 350px;
+}
+
+.capabilities{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.capability-items{
+    padding: 10px 50px 50px 0;
+}
+
+.capability-number{
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.capability-title{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.section-title{
+    font-size: 28px;
+    margin: 10px 0;
+    padding: 10px 0;
+}
+
+.section-title:hover{
+    color: black;
+}
+
+.capability-list-item{
+    text-decoration: none;
+}
+
+#self-description a:hover{
+    color: black;
+}
+
+#capabilities-01{
+    grid-column: 1;
+}
+
+#capabilities-02{
+    grid-column: 2;
+}
+
+#capabilities-03{
+    grid-column: 3;
+}
+
+.big-footer{
+    padding:30px 50px;
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+}
+
+/* responsive part for small screen */
+@media screen and (max-width: 1000px) {
+/* big menu disappear, small menu appear, title goes to the right*/
+    .menu-content{
+        display: none;
+    }
+
+    .menu-content-small{
+        display: block;
+        margin: 10px;
+        padding: 15px;
+    }
+
+    #menu-icon{
+        display: none;
+    }
+
+    .menu-item-sm-title{
+        /* display: inline-block; */
+        float: right;
+        position: relative;
+        bottom: 10px;
+        padding-right: 30px;
+    }
+    .sm-title{
+        text-decoration: none;
+        font-size: 18pt;
+    }
+
+    .menu-name{
+        display: inline-block;
+    }
+
+    .menu-name i{
+        cursor: pointer;
+    }
+    
+    .drop-down-menu{
+        max-height: 0;
+        overflow: hidden;
+        position: absolute;
+        background-color: white;
+        opacity: 0.8;
+        top:70px;
+        width: 100%;
+    }
+
+    .small-menu-list{
+        list-style-type: none;
+    }
+
+    #small-menu-list{
+        padding: 10px 0;
+        font-size: 18px;
+    }
+
+    .menu-item-sm{
+        padding-top: 20px;
+    }
+
+    input:checked~.drop-down-menu{
+        max-height: 100%;
+    }
+
+/* introduction takes more width */
+    #description{
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+/* decoration section becomes vertical  */
+    #picture-and-deco{
+        display: contents;
+    }
+
+    .deco{
+        border: none;
+        padding-top: 30px;
+        margin-top: 10px;
+    }
+
+    #deco-picture{
+        padding: 20px 0;
+    }
+
+/* capability section becomes vertical  */
+    .capabilities{
+        display: grid;
+        grid-template-columns: none;
+        grid-template-rows: repeat(1, 1fr);
+    }
+
+    /* footer smaller width */
+    .big-footer{
+        width: auto;
+    }   
+}
+
+/* *** ***** *****  second page resume ***** ***** **** ***/
+.resume-section p{
+    padding: 4px 0;
+}
+.resume-bullet-list li{
+    padding: 4px 0;
+}
+.resume-section a{
+    margin: 6px 0;
+}
+.resume-section h2, h3{
+    padding: 4px 0;
+}
+.resume-section h2{
+    margin-top: 4px;
+}
+
+.resume-section{
+    border-bottom: #914535 solid;
+    padding: 10px 0;
+}
+
+.resume-section a:hover{
+    color: black;
+
+}
+
+/* responsive */
+@media screen and (max-width: 1000px) {
+    .resume-title{
+        display: none;
+    }
+}
+
+/* ***** ***** **** *** third page courses  **** **** ***** *****/
+#search-container input{
+    background-color: transparent;
+    width: 60%;
+    border: 0;
+    border-bottom: 2px solid #914535;
+    padding: 10px;
+}
+
+#search-container button{
+    padding: 10px;
+    border: solid #914535;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#sorting-buttons{
+    margin: 10px 0;
+    padding: 5px 0;
+}
+
+.button-sort{
+    cursor: pointer;
+    border: none;
+    border-bottom: 0.5px solid #914535;
+}
+
+.button-sort:hover{
+    color: black;
+}
+
+
+#course-gallery{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-column-gap: 1.5em;
+    padding: 2em 0;
+}
+
+.card{
+    max-width: 18em;
+    margin-top: 1em;
+    padding: 1em;
+    border-radius: 5px;
+    box-shadow: 1em 2em 2.5em rgba(1, 2, 68, 0.08);
+    cursor: pointer;
+
+}
+
+.image-container{
+    text-align: center;
+}
+
+.image-container img{
+    max-width: 100%;
+    object-fit: contain;
+    height: 15em;
+}
+
+.info-container h5{
+    font-weight: 400;
+    font-size: 14pt;
+    text-align: center;
+}
+
+.info-container h6{
+    font-weight: 400;
+    font-size: 13pt;
+    text-align: center;
+}
+
+.info-container p{
+    font-weight: 100;
+    font-size: 11pt;
+    text-align: center;
+    color: grey;
+}
+
+#lightbox{
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(244, 244, 244, 0.8);
+    display: none;
+}
+
+#lightbox.active{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.course-description{
+    display: none;
+}
+
+.lightbox-info{
+    background-color: rgba(244, 244, 244, 0.8);
+    height: 40%;
+    width: 60%;
+    font-size: 14pt;
+    text-align: center;
+    line-height: 2;
+    border: none;
+}
+
+.hide{
+    display: none;
+}
+
+/* make the gallery responsive */
+@media screen and (max-width: 1000px){
+    
+    .image-container img{
+        max-width: 100%;
+        object-fit: contain;
+        height: 10em;
+    }
+    .card{
+        max-width: 10em;
+        margin-top: 1em;
+    }
+
+    #course-gallery{
+        grid-template-columns: auto auto;
+        grid-column-gap: 1em;
+    }
+
+    .lightbox-info{
+        background-color: rgba(244, 244, 244, 0.8);
+        height: 40%;
+        width: 80%;
+        font-size: 12pt;
+        text-align: center;
+        line-height: 1.5;
+        border: none;
+    }
+}
